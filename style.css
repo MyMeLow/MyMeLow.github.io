@@ -18,9 +18,16 @@ header, main, footer {
 }
 
 .image-container img {
-    width: 200px; /* 画像のサイズ */
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #333; /* 任意のボーダー */
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* アニメーションを追加 */
+}
+
+.image-container img:hover {
+    transform: scale(1.1); /* ホバー時に拡大 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ホバー時の影を強調 */
 }
