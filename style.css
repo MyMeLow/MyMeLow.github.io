@@ -23,11 +23,11 @@ header, main, footer {
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加 */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* アニメーションを追加 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 影を強く */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-container img:hover {
-    transform: scale(1.1); /* ホバー時に拡大 */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* ホバー時の影を強調 */
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* ホバー時の影も強調 */
 }
