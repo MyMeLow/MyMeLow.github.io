@@ -10,3 +10,17 @@ body {
 header, main, footer {
 	padding: 20px;
         }
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 200px; /* 画像のサイズ */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #333; /* 任意のボーダー */
+}
