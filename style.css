@@ -1,59 +1,222 @@
+/* 全体の背景色 */
 body {
-	background-color: GhostWhite;
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-        }
+    background-color: #ffccdd; /* 薄いピンク */
+    color: #333; /* 読みやすい濃いグレー */
+    font-family: 'Arial', sans-serif; /* シンプルで見やすいフォント */
+    margin: 0;
+    padding: 0;
+}
 
+/* ヘッダー */
+header {
+    background-color: #ff6699; /* 濃いピンク */
+    color: #fff; /* 白文字 */
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 5px solid #ffccdd; /* ヘッダーと他セクションの区切り */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px #ff99bb; /* 可愛い影付き */
+}
+
+/* メインセクション */
+main {
+    background-color: #fff; /* コンテンツ部分は白で読みやすく */
+    border: 3px solid #ff6699; /* 濃いピンクで縁取り */
+    border-radius: 10px; /* 角を丸くする */
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px; /* 横幅を制限して中央に配置 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 立体感を追加 */
+}
+
+/* フッター */
 footer {
-    position: fixed; /* 画面下部に固定 */
-    bottom: 0; /* 画面の下端に配置 */
-    right: 0; /* 右端に配置 */
-    background-color: GhostWhite; /* 背景色 */
-    color: #000000; /* 文字色 */
-    padding: 10px 20px; /* フッター内の余白 */
+    background-color: #ff6699; /* 濃いピンク */
+    color: #fff; /* 白文字 */
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 5px solid #ffccdd; /* セクションの区切り */
+}
+
+footer p {
+    margin: 0;
     font-size: 0.9em;
 }
 
+/* 汎用的なセクションデザイン */
+.section {
+    background-color: #fff; /* 白背景 */
+    border: 3px solid #ff6699; /* 濃いピンクの枠線 */
+    border-radius: 10px; /* 角を丸く */
+    padding: 20px; /* 内側余白 */
+    margin: 20px auto; /* 上下に余白を設置し、中央揃え */
+    max-width: 800px; /* セクションの最大幅を指定 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽い影を付け立体感を演出 */
+}
 
-header, main {
-	padding: 20px;
-        }
+/* セクションタイトル */
+.section h2 {
+    color: #ff6699; /* 濃いピンク */
+    margin-bottom: 10px; /* タイトル下部の余白 */
+    font-size: 1.8em; /* 大きめのフォントサイズ */
+    text-align: center; /* タイトルを中央揃え */
+}
+
+/* セクション内容 */
+.section p {
+    color: #333; /* 濃いグレーで読みやすい文字 */
+    font-size: 1em; /* 通常のテキストサイズ */
+    line-height: 1.6; /* 行間の調整 */
+    margin: 10px 0; /* 上下の余白 */
+    text-align: justify; /* 両端揃えで整った印象に */
+}
+
+/* 画像を含むセクション(汎用) */
+.section-with-image {
+    display: flex; /* 横並び */
+    align-items: center; /* 縦中央揃え */
+}
+
+/* プロフィール画像を丸形にする */
+.section-with-image .image-container img {
+    border-radius: 50%; /* 完全な円形にする */
+    border: 3px solid #ff6699; /* ピンクで縁取り */
+    width: 150px; /* 画像の幅 */
+    height: 150px; /* 画像の高さ */
+    object-fit: cover; /* 画像を中央でフィット */
+    margin-right: 20px; /* 右側に余白 */
+}
+
+.section-with-image .text-container {
+    flex: 1; /* テキストが残りの幅を占有 */
+}
+
+/* サンプルセクションのタイトル (h2) を小さくする */
+.section-with-image .text-container h2 {
+    color: #ff6699; /* 濃いピンク */
+    margin-bottom: 10px; /* 下部の余白 */
+    font-size: 1.2em; /* 小さめのサイズ */
+}
 
 .profile-section {
-    display: flex;
-    align-items: center; /* 垂直方向に中央揃え */
-    justify-content: flex-start; /* 左寄せ */
-    gap: 20px; /* 画像とテキストの間のスペース */
+    display: flex; /* 左右に要素を並べる */
+    align-items: center; /* 縦位置を中央揃え */
+    background-color: #fff; /* 背景色を白 */
+    border: 3px solid #ff6699; /* 濃いピンクで縁取り */
+    border-radius: 10px; /* 角を丸くする */
+    padding: 20px; /* 内側の余白 */
+    margin: 20px auto; /* 上下中央揃え */
+    max-width: 800px; /* 横幅を制限 */
+}
+
+.profile-section .image-container img {
+    border-radius: 50%; /* 画像を丸くする */
+    border: 3px solid #ff6699; /* 画像の縁取り */
+    width: 150px; /* 画像の幅 */
+    height: 150px; /* 画像の高さ */
+    object-fit: cover; /* 画像を中央にフィット */
+    margin-right: 20px; /* 右側の余白 */
+}
+
+.profile-section .text-container {
+    color: #333; /* テキストの色 */
+    font-size: 1em; /* 通常のテキストサイズ */
+}
+
+.profile-section h2 {
+    color: #ff6699; /* 濃いピンク */
+    margin-bottom: 10px; /* 下部の余白 */
+    font-size: 1.5em; /* 少し大きめのサイズ */
+}
+
+.profile-section p {
+    margin: 0; /* 段落の余白をリセット */
+    line-height: 1.5; /* 行間を調整 */
+}
+
+/* リンクのスタイル */
+a {
+    color: #ff6699; /* 濃いピンク */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff99bb; /* ホバー時は明るめのピンク */
+    text-decoration: underline; /* 下線を追加 */
+}
+
+/* ボタンのデザイン */
+button {
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff99bb;
+}
+
+
+
+
+.contact-section {
+    background-color: #ffccdd;
+    border: 2px dashed #ff6699;
+    border-radius: 10px;
     padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    text-align: left; /* 左揃えでプロフェッショナルな印象 */
 }
 
-.image-container img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* 円形にする */
-    object-fit: cover;
-    border: 2px solid #333;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.contact-section h2 {
+    color: #ff6699;
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
-.text-container {
-    max-width: 600px;
-    text-align: left; /* 左揃え */
-}
-
-
-.text-container h2 {
-    margin: 0 0 10px; /* 上下の余白を調整 (下に余白10pxを追加) */
-    padding-top: 5px; /* 上に少しスペースを追加 */
-    font-size: 1.5em;
+.contact-section p {
+    font-size: 1em;
     color: #333;
-}
-
-.text-container p {
-    margin: 10px 0 0;
-    font-size: 0.8em;
-    color: #555;
     line-height: 1.6;
 }
+
+.contact-section a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #ff6699;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.contact-section a:hover {
+    background-color: #ff99bb;
+}
+
+/* メディアクエリ(レスポンシブ対応) */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-section .image-container img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
