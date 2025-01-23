@@ -6,28 +6,54 @@ body {
 	text-align: center;
         }
 
+footer {
+    position: fixed; /* 画面下部に固定 */
+    bottom: 0; /* 画面の下端に配置 */
+    right: 0; /* 右端に配置 */
+    background-color: GhostWhite; /* 背景色 */
+    color: #000000; /* 文字色 */
+    padding: 10px 20px; /* フッター内の余白 */
+    font-size: 0.9em;
+}
 
-header, main, footer {
+
+header, main {
 	padding: 20px;
         }
 
-.image-container {
+.profile-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: flex-start; /* 左寄せ */
+    gap: 20px; /* 画像とテキストの間のスペース */
+    padding: 20px;
 }
 
 .image-container img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* 円形にする */
     object-fit: cover;
     border: 2px solid #333;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 影を強く */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-.image-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4); /* ホバー時の影も強調 */
+.text-container {
+    max-width: 600px;
+    text-align: left; /* 左揃え */
+}
+
+
+.text-container h2 {
+    margin: 0 0 10px; /* 上下の余白を調整 (下に余白10pxを追加) */
+    padding-top: 5px; /* 上に少しスペースを追加 */
+    font-size: 1.5em;
+    color: #333;
+}
+
+.text-container p {
+    margin: 10px 0 0;
+    font-size: 0.8em;
+    color: #555;
+    line-height: 1.6;
 }
