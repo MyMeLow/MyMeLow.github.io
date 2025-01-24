@@ -1,0 +1,20 @@
+/* 全体の基本スタイル */
+body {
+    background-color: #ffccdd; /* 薄いピンク */
+    color: #333; /* 読みやすい濃いグレー */
+    font-family: 'Noto Sans JP', sans-serif; /* 本文用フォント */
+    margin: 0;
+    padding: 0;
+}
+
+/* 共通のリンクスタイル */
+a {
+    color: #ff6699; /* 濃いピンク */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff99bb; /* ホバー時の色 */
+    text-decoration: underline;
+}
