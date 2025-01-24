@@ -3,86 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <meta name="description" content="MyMeろのプロフィールページ。マイメロディーが大好きな社会人男性のユニークな物語。">
-<meta name="keywords" content="MyMeろ, マイメロディー, ホームページ, サンリオ, プロフィール">
-    
-    
+    <meta name="keywords" content="MyMeろ, マイメロディー, ホームページ, サンリオ, プロフィール">
     <title>MyMeろ</title>
     
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    
+    
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="style.css">
-     
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
   
+    
+     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+     
+     <!-- CSSファイルを読み込む -->
+    <link rel="stylesheet" href="layouts/base.css">
+    <link rel="stylesheet" href="layouts/layout.css">
+    <link rel="stylesheet" href="layouts/components.css">
+    <link rel="stylesheet" href="layouts/responsive.css">
+     
 </head>
 <body>
-    <header>
+
+
+	<!-- ロード画面 -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
     
+
+   <header>
     
-    
-        <h1>Welcome</h1>
-    </header>
+        <h1>Welcome to MyMeろ</h1>
+   
+	</header>
 
     <main>
-    
-<div class="section">
-    <h2>ようこそ</h2>
-    <p>
-        このページでは、MyMeろという人物について記したホームページです。
-        HTMLとCSSを学ぶために作成しました
-    </p>
-</div>
-
-<div class="section">
-    <div class="text-container">
-        <div class="image-container">
-            <img src="profile.jpg" alt="MyMeろのプロフィール画像">
+        <div class="section">
+            <h2>ようこそ</h2>
+            <p>このページでは、MyMeろという人物について記したホームページです。HTMLとCSSを学ぶために作成しました</p>
         </div>
-        <div class="text-content">
-            <h2>MyMeろとは?</h2>
-            <p>
-                MyMeろとは、手にマイメロディーのタトゥーを入れてしまうほどマイメロが好きな
-                少しばかり変な社会人男性です。
-            </p>
+
+        <div class="section">
+            <div class="text-container">
+                <div class="image-container">
+                    <img src="profile.jpg" alt="MyMeろのプロフィール画像">
+                </div>
+                <div class="text-content">
+                    <h2>MyMeろとは?</h2>
+                    <p>MyMeろとは、手にマイメロディーのタトゥーを入れてしまうほどマイメロが好きな少しばかり変な社会人男性です。</p>
+                </div>
+            </div>
         </div>
-    </div>
+
+        <div class="section">
+            <h2>マイメロディーについて</h2>
+            <p>マイメロディーは、1975年にサンリオによってデビューした可愛いキャラクターです。ピンクのフードをかぶったウサギです。</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>お問い合わせは、以下のボタンをご利用ください。</p>
+            
+            
+            <!-- ボタンを配置 -->
+        <div class="button-container">
+            <a href="https://twitter.com" target="_blank" class="button button-twitter">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+            <a href="https://discord.com" target="_blank" class="button button-discord">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+        </div>
+        
 </div>
-
-
-
-<div class="section">
-    <h2>マイメロディーについて</h2>
-    <p>
-        マイメロディーは、1975年にサンリオによってデビューした可愛いキャラクターです。
-        ピンクのフードをかぶったウサギです
-    </p>
-</div>
-
-
-<div class="contact-section">
-    <h2>お問い合わせ</h2>
-    <p>ご質問やお問い合わせは、以下のリンクやボタンをご利用ください。</p>
-    
-    <!-- ボタン -->
-    <a href="https://x.com/utqh1r0?s=21" class="button twitter">
-        <i class="fab fa-twitter"></i> Twitter
-    </a>
-    
-    <a href="https://discord.gg/swgBG9cB" class="button discord">
-        <i class="fab fa-discord"></i> Discord
-    </a>
-</div>
-
-
+            
+            
+        </div>
     </main>
-    
-    <script src="script.js"></script>    
+
     <button id="back-to-top">↑ Top</button>
-    
-<footer>
-    <p>&copy; 2025 MyMeろ</p>
-</footer>
+    <footer>
+        <p>&copy; 2025 MyMeろ</p>
+    </footer>
+
+    <script src="js/loading.js" defer></script>
+		<script src="js/buttons.js" defer></script>
+		<script src="js/main.js" defer></script>
 
 </body>
 </html>
