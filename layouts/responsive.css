@@ -1,0 +1,47 @@
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .section, .contact-section {
+        width: 90%;
+    }
+
+    .section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image-container img {
+        margin-bottom: 10px;
+    }
+}
+
+/* スクロールトップボタンのスタイル */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6699;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+#back-to-top.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#back-to-top:hover {
+    background-color: #ff99bb;
+}
