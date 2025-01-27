@@ -1,49 +1,61 @@
-/* ヘッダー */
+/* ヘッダー全体のスタイル */
 header {
-    display: flex; /* 子要素の中央揃え */
-    justify-content: center; /* 水平方向に中央揃え */
-    align-items: center; /* 垂直方向に中央揃え */
-    background-color: #FF6699; /* 濃いピンク背景 */
-    color: #fff; /* 白文字 */
-    padding: 20px 0;
-    font-size: 2rem; /* フォントサイズ */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* 文字の影 */
-    border-bottom: 5px solid #FFCCDD; /* ヘッダー下部の区切り線 */
+    display: flex; /* フレックスボックスで左右に分割 */
+    align-items: center; /* 垂直方向を中央揃え */
+    justify-content: space-between; /* 左右のスペースを確保 */
+    background-color: #FF6699; /* 背景色 */
+    padding: 10px 20px; /* 上下左右の余白 */
+    color: #fff; /* テキストの色 */
 }
 
-header h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2rem; /* ヘッダーの文字サイズ */
-    color: #FFFFFF; /* 白文字 */
-    text-shadow: 2px 2px 4px #AAAAAA; /* ライトグレーの影 */
-    background-color: #FF6699; /* 濃いピンク背景 */
-    padding: 10px 20px;
-    border-radius: 10px; /* 背景の角丸 */
+/* ロゴとタイトルの配置 */
+.logo-title {
+    display: flex; /* 横並びに配置 */
+    align-items: center; /* 中央揃え */
+    gap: 15px; /* ロゴとタイトルの間隔 */
 }
 
-/* セクションをカード風にデザイン(柔らかなパステル系) */
+/* ロゴのスタイル */
+.logo-title img {
+    width: 50px; /* ロゴの幅 */
+    height: 50px; /* ロゴの高さ */
+    object-fit: cover; /* ロゴを枠内に収める */
+    border-radius: 50%; /* ロゴを丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+/* タイトルのスタイル */
+.logo-title h1 {
+    font-family: 'Pacifico', cursive; /* タイトル用フォント */
+    font-size: 1.8rem; /* タイトルのサイズ */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* 軽い影を追加 */
+    margin: 0; /* デフォルトの余白をリセット */
+}
+
+
+/* セクションをカード風にデザイン */
 .section {
-    background-color: #FFE4E1; /* 柔らかな淡いピンク */
-    border: 2px solid #FF99BB; /* 薄いピンクのボーダー */
-    border-radius: 15px; /* カードの角を丸くする */
+    background-color: #FFE4E1; /* 柔らかな淡いピンク */
+    border: 2px solid #FF99BB; /* 薄いピンクのボーダー */
+    border-radius: 15px; /* カードの角を丸くする */
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつけてカードを浮き上がらせる */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーション */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影をつけてカードを浮き上がらせる */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* ホバー時のアニメーション */
 }
 
-/* セクションのホバー効果 */
+/* セクションのホバー効果 */
 .section:hover {
-    transform: translateY(-10px); /* カードを少し持ち上げる */
+    transform: translateY(-10px); /* カードを少し持ち上げる */
     box-shadow: 0 8px 16px rgba(255, 153, 187, 0.3); /* 影を強調する */
 }
 
-/* セクションタイトル(h2)のデザイン */
+/* セクションタイトル(h2)のデザイン */
 .section h2 {
     font-family: 'Pacifico', cursive;
     font-size: 2rem;
-    color: #FF6699; /* 濃いピンクで目立たせる */
+    color: #FF6699; /* 濃いピンクで目立たせる */
     text-align: center;
     margin-bottom: 15px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* 軽い影を追加 */
@@ -53,7 +65,7 @@ header h1 {
 .section p {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1rem;
-    color: #555555; /* 濃いグレーで読みやすく */
+    color: #555555; /* 濃いグレーで読みやすく */
     line-height: 1.6;
     text-align: justify; /* テキストを整列 */
     margin: 0;
@@ -61,7 +73,7 @@ header h1 {
 
 /* フッター */
 footer {
-    background-color: #FF6699; /* 濃いピンク背景 */
+    background-color: #FF6699; /* 濃いピンク背景 */
     color: #fff; /* 白文字 */
     text-align: center;
     padding: 20px 0;
